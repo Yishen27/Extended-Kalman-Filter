@@ -7,11 +7,11 @@ radar and lidar data. The codes take in noisy radar and lidar data, return the p
 ## Program performance
 The program reached RMSEs for x postion, y position, x velocity, y velocity lower than 0.11, 0.11, 0.52, 0.52, respectively.
  
- ## File structure
+ ## Main file structure
  
  ### Folder *src*
  
- This is the folder contains all c++ files consititute the program.
+ This is the folder contains all c++ files constitute the program.
  
  - FusionEKF.cpp and FusionEKF.h
    
@@ -37,4 +37,8 @@ The program reached RMSEs for x postion, y position, x velocity, y velocity lowe
 ### UD_README.md
  
  The original readme file of this project.
+ 
+### Folder *data*
+
+  Folder contains the data file.
  
