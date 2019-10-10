@@ -19,8 +19,19 @@ The program reached RMSEs for x postion, y position, x velocity, y velocity lowe
    
  - kalman_filter.cpp and kalman_filter.h
  
- `kalman_filter.h` defines the kalman_filter class. `kalman_filter.cpp` contains functions for the prediction step as well as the Kalman filter update step (lidar) and extended Kalman filter update step (radar).
+    `kalman_filter.h` defines the kalman_filter class. `kalman_filter.cpp` contains functions for the prediction step as well as the Kalman filter update step (lidar) and extended Kalman filter update step (radar).
  
+ - tools.cpp and tools.h 
+ 
+    `tools.cpp` implement functions to calculate root mean squared error and the Jacobian matrix. `tools.h` is the corresponding header.
+    
+ - main.cpp 
+ 
+   Communicates with the Simulator receiving data measurements, calls a function to run the Kalman filter, calls a function to calculate RMSE.
+   
+ - measurement_package.h
+ 
+    Defines the measurement_package class stores the measurement data.
  
  
 ### UD_README.md
