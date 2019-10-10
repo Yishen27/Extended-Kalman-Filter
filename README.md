@@ -8,12 +8,22 @@ radar and lidar data. The codes take in noisy radar and lidar data, return the p
 The program reached RMSEs for x postion, y position, x velocity, y velocity lower than 0.11, 0.11, 0.52, 0.52, respectively.
  
  ## File structure
- - Folder *src*
  
- This is the folder contains all c++ files consititute the program. 
+ ### Folder *src*
+ 
+ This is the folder contains all c++ files consititute the program.
+ 
+ - FusionEKF.cpp and FusionEKF.h
+   
+   Code for implementing sensor fusion and corresponding header. `FusionEKF.cpp` initialize variables and matrices, initialize the Kalman filter position vector with the first sensor measurements, and call the update step for either the lidar or radar sensor measurement.
+   
+ - kalman_filter.cpp and kalman_filter.h
+ 
+ `kalman_filter.h` defines the kalman_filter class. `kalman_filter.cpp` contains functions for the prediction step as well as the Kalman filter update step (lidar) and extended Kalman filter update step (radar).
  
  
- - UD_README.md
+ 
+### UD_README.md
  
  The original readme file of this project.
  
